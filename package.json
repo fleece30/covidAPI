@@ -1,0 +1,19 @@
+{
+  "name": "covidapi",
+  "version": "1.0.0",
+  "description": "API to get data from MHFW using web scraping",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Abhishek Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

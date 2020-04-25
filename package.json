@@ -4,7 +4,8 @@
   "description": "API to get data from MHFW using web scraping",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Abhishek Yadav",
   "license": "ISC",

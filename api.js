@@ -11,7 +11,7 @@ router.get('/getstate/:name', (req, res) => {
 router.get('/getall', (req, res) => {
     console.log(data.states);
     console.log(data.country);
-    res.json(data.country[0]);
+    res.json(data.country);
 })
 
 module.exports = router;

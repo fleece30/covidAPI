@@ -13,13 +13,13 @@ const printData = async () => {
     const $ = await fetchData();
     $('.site-stats-count > ul').each((index, element) => {
         const ele = $(element).text().trim().split('\n');
-        // console.log(ele[0].trim());
         const data = {
             'active': ele[0].trim(),
             'cured': ele[5].trim(),
             'deaths': ele[12].trim(),
             'migrated': ele[17].trim()
         }
+        country.push(data);
     });
 } 
 

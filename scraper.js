@@ -23,7 +23,21 @@ const printData = async () => {
   });
 };
 
-//add function here
+const printStateData = async () => {
+  const $ = await fetchData();
+  $(".data-table > table > tbody > tr").each((index, element) => {
+    if (index > 31) return false;
+    const ele = $(element).text().trim().split("\n");
+    const data = {
+      trimmedState: ele[1].toLowerCase().trim().replace(/ +/g, ""),
+      stateName: ele[1].trim(),
+      total: parseInt(ele[2].trim()),
+      recovered: parseInt(ele[3].trim()),
+      deaths: parseInt(ele[4].trim()),
+    };
+    states.push(data);
+  });
+};
 
 printStateData();
 printData();

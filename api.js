@@ -8,4 +8,10 @@ router.get("/getall", (req, res) => {
   res.json(data.country[0]);
 });
 
+router.get("/getstate/:name", (req, res) => {
+  const reqState = req.params.name;
+  const result = data.states.find((result) => result.trimmedState === reqState);
+  res.json(result);
+});
+
 module.exports = router;
